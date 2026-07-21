@@ -1,0 +1,20 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.paragrafo{
+    color: #f9f9f9;
+    background-color: #cf4949;
+    font-size: 2em;
+}
+
+#decoracao{
+    /*text-decoration: underline;*/
+    /*text-decoration: overline;*/
+    text-decoration: line-through;
+}
+
+.italico{
+    font-style: italic;
+}
