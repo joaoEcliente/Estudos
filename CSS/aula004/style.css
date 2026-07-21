@@ -1,0 +1,22 @@
+.menu{
+    text-align: center;
+    font-size: 3em;
+    color: #cf4949;
+}
+
+.conteudo{
+    text-align: center;
+    font-size: 1.5em;
+    color: #2f2f2f;
+}
+
+#nosso{
+    color: #cf4949;
+    text-decoration: underline;
+}
+
+.rodape{
+    text-align: center;
+    font-size: 1em;
+    color: #2f2f2f;
+}
