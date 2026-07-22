@@ -4,9 +4,11 @@
 }
 
 .container{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background-color: #494949;
     border-radius: 10px;
     box-sizing: border-box;
+    padding: 50px;
+    margin: auto;
 }
