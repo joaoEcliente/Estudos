@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #b1b1b1;
+    box-shadow: 10px 10px 2px #000, -10px -10px 2px #ff0000;
+}
+
+.container > h2{
+    text-shadow: 4px 4px green;
+}
+
+@keyframes animacao-container{
+    form{
+        background: red;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+.container-animacao{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    animation: animacao-container 5s 3s 2 alternate; 
+}
