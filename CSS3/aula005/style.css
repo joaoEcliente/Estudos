@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.container:hover{
+    border-radius: 200px;
+    background-color: black;
+    transition: all 5s;
+}
