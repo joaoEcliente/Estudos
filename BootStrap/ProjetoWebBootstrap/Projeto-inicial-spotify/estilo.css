@@ -20,13 +20,14 @@ body{
     background: url("imagens/spotify.svg") no-repeat;
     display: block;
     background-size: contain;
-    color: transparent;
+    color: transparent; 
 }
 
 nav .nav-transparente{
     padding: 15px 0;
-    background: rgb(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.349);
     border: none;
+    
 }
 
 .navbar-dark .navbar-nav > li > a{
@@ -69,3 +70,31 @@ h1 {
 }
 
 /*------- Body da Página --------*/
+
+.btn-custom{
+    color: #ffffff;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo{
+    background-color: #7c25f8;
+}
+
+.btn-branco{
+    border: 2px solid #fff;
+}
+
+.btn-branco:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-roxo:hover{
+    background-color:#510db1;
+}
