@@ -1,0 +1,30 @@
+.img-logo{
+    height: 40px;
+    width: 132px;
+    background: url("imagens/spotify.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    color: transparent;
+}
+
+nav .nav-transparente{
+    padding: 15px 0;
+    background: rgb(0, 0, 0, 0.6);
+    border: none;
+}
+
+.navbar-dark .navbar-nav > li > a{
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav > li > a:hover{
+    color: #08ee1b;
+}
+
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: #fff;
+    margin: 15px 16px;
+}
+
