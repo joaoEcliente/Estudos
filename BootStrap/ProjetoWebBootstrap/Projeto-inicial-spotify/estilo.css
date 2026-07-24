@@ -1,3 +1,19 @@
+/*=========================== LAYOUT========================================*/
+
+html, body, .capa{
+    height: 100%;
+}
+
+body{
+    background: url('imagens/capa.png'),
+                url('imagens/ruido.png'),
+                linear-gradient(45deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*------- Barra de Navegação--------*/
+
+
 .img-logo{
     height: 40px;
     width: 132px;
@@ -27,4 +43,29 @@ nav .nav-transparente{
     background: #fff;
     margin: 15px 16px;
 }
+/*------------------------Imagem Capa---------------*/
 
+.capa{
+    border: 1px solid red;
+    display: table;
+    width: 100%;
+}
+
+.capa-texto{
+    text-align: center;
+    color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -0.05em;
+    
+}
+
+/*-----------Tipografia-----------------*/
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+/*------- Body da Página --------*/
