@@ -1,9 +1,7 @@
-// Do While
+// for
 
 let num = 1;
 
-do{
+for(num; num <= 10; num++){
     document.write(num, '<br>')
-    num++
-
-} while(num <= 10)
+}
