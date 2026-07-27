@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Eventos(mouse)</title>
 </head>
 <body>
     
+    <div style="display: flex; gap: 10px;">
+        <div onclick="clicar()" style="background-color: #ccc; height: 150px; width: 150px;"></div>
+        <br>
+        <div ondblclick="duplo_click()" style="background-color: #b60000; height: 150px; width: 150px;"></div>
+        <br>
+        <div onmousedown="pressionado()" style="background-color: #4df30b; height: 150px; width: 150px;"></div>
+        <br>
+        <div onmouseover="movido_para_cima()" style="background-color: #e606b5; height: 150px; width: 150px;"></div>
+        <br>
+        <div onmouseout="movido_para_fora()" style="background-color: #e69603; height: 150px; width: 150px;"></div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
