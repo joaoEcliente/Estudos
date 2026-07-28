@@ -68,6 +68,8 @@ function cria_balao(qtde_balao){
 
 function estourar(e){
     var balao_estourado = e.id;
+
+    document.getElementById(balao_estourado).setAttribute("onclick", "")
     document.getElementById(balao_estourado).src = 'imagens/balao_azul_pequeno_estourado.png';
 
     pontuacao(-1)
