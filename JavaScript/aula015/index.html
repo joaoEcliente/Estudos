@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos teclados</title>
+</head>
+<body>
+    <input onkeydown="pressionar_tecla()" type="text">
+    <input onkeypress="pressionar_tecla_caracter()" type="text">
+    <input onkeyup="tecla_liberada()" type="text">
+
+    <script>
+        function press_qualquer_tecla(){
+            alert('Pressionou qulquer tecla');
+        }
+
+        function pressionar_tecla_caracter(){
+            alert("Uma tecla foi pressionada!");
+        }
+
+        function tecla_liberada(){
+            alert('Uma tecla foi liberada')
+        }
+    </script>
+</body>
+</html>
