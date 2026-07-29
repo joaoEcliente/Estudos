@@ -80,31 +80,69 @@ $(document).ready(function(){
     }
 
     function verifica_combinacao(){
+
+        //VERIFICA VENCEDOR NA VERTICAL
         var pontos = 0;
 
         for(var i = 1; i <= 3; i++){
             pontos = pontos + matriz_jogo['a'][i];
         }
-        pontos = 0
         ganhador(pontos);
+        pontos = 0
 
         for(var i = 1; i <= 3; i++){
             pontos = pontos + matriz_jogo['b'][i];
         }
-        pontos = 0
         ganhador(pontos);
+        pontos = 0
 
         for(var i = 1; i <= 3; i++){
             pontos = pontos + matriz_jogo['c'][i];
         }
-        pontos = 0
         ganhador(pontos);
 
+        //VERIFICA VENCEDOR NA HORIZONTAL
+
+        for(var l = 1; l <= 3; l++){
+            pontos = 0
+
+            pontos += matriz_jogo['a'][l];
+            pontos += matriz_jogo['b'][l];
+            pontos += matriz_jogo['c'][l];
+
+            ganhador(pontos);
+        }
+
+        // VERIFICA VENCEDOR NA DIAGONAL PRINCIPAL
+            pontos = 0;
+
+            pontos += matriz_jogo['a'][1];
+            pontos += matriz_jogo['b'][2];
+            pontos += matriz_jogo['c'][3];
+
+            ganhador(pontos);
+
+
+            // VERIFICA VENCEDOR NA DIAGONAL SECUNDÁRIA
+            pontos = 0;
+
+            pontos += matriz_jogo['a'][3];
+            pontos += matriz_jogo['b'][2];
+            pontos += matriz_jogo['c'][1];
+
+            ganhador(pontos);
 
     }
-
-    function ganhador(){
-        
+    function ganhador(pontos){
+        if(pontos == -3){
+            const player_1 = $('#entrada_nome_jogador_1').val();
+            alert(player_1 + ' VENCEDOR!');
+            $('.area_de_jogo').off();
+        } else if(pontos == 3){
+            const player_2 = $('#entrada_nome_jogador_2').val();
+            alert(player_2 + ' VENCEDOR!');
+            $('.area_de_jogo').off();
+        }
     }
 })
 
