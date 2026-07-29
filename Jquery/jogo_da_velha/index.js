@@ -50,6 +50,7 @@ $(document).ready(function(){
 
     $('.area_de_jogo').click(function(){
         const id_elemento = this.id;
+        $('#'+id_elemento).off();
         jogada(id_elemento);
     })
 
@@ -136,11 +137,11 @@ $(document).ready(function(){
     function ganhador(pontos){
         if(pontos == -3){
             const player_1 = $('#entrada_nome_jogador_1').val();
-            alert(player_1 + ' VENCEDOR!');
+            alert(player_1 + ' Vencedor!');
             $('.area_de_jogo').off();
         } else if(pontos == 3){
             const player_2 = $('#entrada_nome_jogador_2').val();
-            alert(player_2 + ' VENCEDOR!');
+            alert(player_2 + ' Vencedor!');
             $('.area_de_jogo').off();
         }
     }
